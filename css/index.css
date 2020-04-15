@@ -225,3 +225,42 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+header {
+  width: 100%;
+  border-bottom: 2px dashed silver;
+}
+header nav {
+  margin: 2rem;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+header nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
+.fun-bus {
+  border-bottom: 2px dashed silver;
+  margin-bottom: 4%;
+}
+.fun-bus img {
+  margin-bottom: 2%;
+}
+.fun-bus p {
+  margin-bottom: 3%;
+}
+.btn {
+  width: 100%;
+  height: 45px;
+  color: #ffffff;
+  background-color: #377075;
+  font-size: 1.8rem;
+  border-radius: 16px;
+  padding: 1.8rem auto;
+}
+/*
+parameters example @justify - these are placeholder values - what matters is the order.
+arugments - these get passed in when the mixin is used - example center 
+*/

@@ -1,51 +1,100 @@
 .home {
 
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
   .content-section {
-    margin: 30px 0;
+    margin: 0px 30px 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        width: 100%;
+        padding: 0;
+      }
+
       img {
         border-radius: 10px;
-      }
-    }
-  }
+
+        @media @phone {
+          width: 100%;
+        }
+      }// this closes the img tag
+    }// this closes the .img-content class tag
+
+    .fun-bus {
+      border-bottom: 2px dashed silver;
+      margin-bottom: 4%;
+  
+      img {
+          margin-bottom: 3%;
+      }// this closes the img tag
+  
+      p {
+          margin-bottom: 3%;
+      }// this closes the p tag
+    }// this closes the .fun-bus class tag
+  }// this closes the .content-section class tag
 
   .inverse-content {
-    padding-bottom: 30px;
+    padding: 30px 0;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      padding-top: 20px;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+
+      @media @phone {
+        order: -1;
+      }
+    }//this closes the .text-content class tag
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+    }//this closes the .img-content class tag
+  }//this closes the .inverse-content class tag
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width: 100%;
+      padding-top: 5%;
+    }
+
     img {
       border-radius: 10px;
-    }
-  }
+    }// this closes the img tag
+  }// this closes the .content-destination class tag 
 
   .content-pick {
     padding-top: 30px;
@@ -53,9 +102,22 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
-  }
-}// home
+
+      @media @phone {
+        width: 100%;
+        padding: 0 10%;
+      }
+
+      .btn {
+        .custom-btn()
+      }//this closes the .btn class tag 
+    }// this closes the .destination class tag
+  }// this closes the .content-pick class tag
+}// this closes the .home class tag
